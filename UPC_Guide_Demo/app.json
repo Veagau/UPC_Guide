@@ -1,0 +1,11 @@
+{
+  "pages": [  
+    "pages/start/start"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor":"#0B8BF0",
+    "navigationBarTitleText": "石大导览",
+    "navigationBarTextStyle": "white"
+  }
+}

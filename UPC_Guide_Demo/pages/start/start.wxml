@@ -1,0 +1,16 @@
+<!--start.wxml-->
+<view class='contain'>
+  <view class='headview'>
+    <view class='helpbtn' id='btnhelp' bindtap='taphelp' animation='{{tapanimation4}}'>?</view>
+  </view>
+  <image class='upclogo' style="width: {{imageWidth1}}px; height: {{imageHeight1}}px;" src="{{imageSrc1}}" bindload="imageLoad1"></image>
+  <view class='btn1' id='btnintro' bindtap='tapintro' animation='{{tapanimation1}}'>石大简介</view>
+  <view class='btn2' id='btnmap' bindtap='tapmap' animation='{{tapanimation2}}'>石大导航</view>
+  <view class='btn3' id='btnallview' bindtap='tapallview' animation='{{tapanimation3}}'>石大全景</view>
+  <view class='footview'>
+    <text class='rights'>石大校园导览 {{ver}} \n Copyright © 2018 UPC-VVV</text>
+  </view>
+  <view class='backcontain'>
+    <image id="backimg" style="width: {{imageWidth2}}px; height: {{imageHeight2}}px;-webkit-transition: transform .8s ease-out;-webkit-transform:translate3d({{transformHorizon}}px,{{transformVertical}}px,0)" bindload="imageLoad2" src="{{indexImg}}"></image>
+  </view>
+</view>

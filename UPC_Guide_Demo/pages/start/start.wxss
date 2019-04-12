@@ -1,0 +1,117 @@
+/* start.wxss */
+
+view {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*contain  */
+
+.contain {
+  position: relative;
+}
+
+/*help*/
+
+.headview {
+  position: fixed;
+  z-index: 3;
+  height: 60rpx;
+  width: 60rpx;
+  top: 30rpx;
+  right: 30rpx;
+}
+
+.helpbtn {
+  position: fixed;
+  z-index: 3;
+  color: #fff;
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  margin: auto;
+  top: 30px;
+  /* left: 0px; */
+  right: 30px;
+  /* bottom: 0px; */
+  border-radius: 60rpx;
+  background-color: #133f62;
+  font-size: 50rpx;
+  font-weight: bolder;
+  line-height: 60rpx;
+  box-shadow: 0rpx 1rpx 1rpx 1rpx rgb(88, 88, 88);
+}
+
+
+.upclogo {
+  position: fixed;
+  z-index: 3;
+  margin: auto;
+  top: 60px;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+}
+
+
+
+.btn1, .btn2, .btn3 {
+  position: fixed;
+  z-index: 3;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  background-color: #133f62;
+  width: 266rpx;
+  height: 67rpx;
+  color: #fff;
+  border-style: solid;
+  border-color: #0ff;
+  border-width: medium;
+  border-radius: 30rpx;
+  box-shadow: 0rpx 3rpx 2rpx 1rpx rgb(88, 88, 88);
+  text-align: center;
+  line-height: 67rpx;
+}
+
+.btn1 {
+  top: 240px;
+}
+
+.btn2 {
+  top: 300px;
+}
+
+.btn3 {
+  top: 360px;
+}
+
+/*底部声明*/
+
+.footview {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 30rpx;
+}
+
+.rights {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+
+/*背景图片*/
+
+.backcontain {
+  text-align: center;
+  /* display: fixed;  */
+}
+
+#backimg {
+  position: fixed;
+  z-index: 1;
+  top: -50px;
+  left: -24px;
+}
