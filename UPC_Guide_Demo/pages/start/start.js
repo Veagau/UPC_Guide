@@ -83,9 +83,9 @@ Page({
     var that = this;
     console.log(taptarget);
     console.log("进入石大简介");
-    // wx.navigateTo({
-    //   url: '../../pages/introduce/introduce',
-    // });
+    wx.navigateTo({
+      url: '../../pages/introduce/introduce',
+    });
     //点按效果动画
     let tapanimation1 = wx.createAnimation({
       duration: 200,

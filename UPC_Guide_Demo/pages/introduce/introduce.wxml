@@ -1,0 +1,42 @@
+ <view class="box">
+ <view class="pic">
+ <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{movies}}">  
+        <swiper-item>  
+          <image src="{{item}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+    </swiper> 
+</view>
+<view class="title">
+<text class="namec">中国石油大学（华东）\n</text>
+<text class="namece">CHINA UNIVERSITY OF PETROLEUM</text>
+</view>
+<view class="navi">
+<view class="{{isChecked1?'is_checked':'normal'}}" bindtap='btnClick1' size="mini"> 学校简介</view>
+<view class="{{isChecked2?'is_checked':'normal'}}" bindtap='btnClick2' size="mini"> 历史沿革</view>
+<view class="{{isChecked3?'is_checked':'normal'}}" bindtap='btnClick3' size="mini"> 人才培养</view>
+<view class="{{isChecked4?'is_checked':'normal'}}" bindtap='btnClick4' size="mini"> 校园文化</view>
+</view>
+
+<view class="context">
+<scroll-view scroll-y style="height: 500rpx;">
+<text class="wenzi" wx:if="{{ifnumber>80}}" >中国石油大学(华东)是<text style="color:blue">教育部直属全国重点大学</text>, 是国家批准设立研究生院的大学，是国家“<text style="color:blue">211工程</text>”、“<text style="color:blue">985优势学科创新平台</text>”和国家<text style="color:blue">“双一流”学科建设高校</text>，是教育部与五大能源企业集团公司（中国石油、中国石化、中国海油、神华集团、延长石油）共建、教育部与山东省人民政府共建的高校。学校是一所以工为主、石油石化特色鲜明、多学科协调发展的大学，学科涵盖工学、理学、经济学、管理学、法学、教育学、文学7大门类，<text style="color:blue">地质资源与地质工程</text>、<text style="color:blue">石油与天然气工程</text>2个一级学科入选国家“双一流”建设学科。</text>
+<view class="table" wx:elif="{{ifnumber>70}}">
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr bg-g" >
+      <view class="td-1">{{item.code}}</view>
+      <view class="td-2">
+      <text class="th-text">{{item.text}}</text>
+      </view>
+      <!--view class="td">{{item.type}}</view-->
+    </view>
+  </block>
+</view>
+<text class="wenzi" wx:elif="{{ifnumber>60}}">学校拥有“学士—硕士—博士”完整的人才培养体系。现有全日制在校生2.6万余人，其中本科生近19000人、研究生6000余人、留学生1300余人，函授网络在籍生8.7万人。《泰晤士高等教育》发布的世界500强企业CEO母校排名，学校列<text style="color:blue">全球高校第35位、中国高校第6位</text>；恢复高考40年来，本科毕业生当选中国科学院和中国工程院院士人数，我校居全国高校第20位。毕业生离校<text style="color:blue">就业率连续23年保持在90%以上</text>，被国务院授予“全国就业先进工作单位”并入选50所全国毕业生就业典型经验高校。</text>
+<text class="wenzi" wx:elif="{{ifnumber>50}}"><text style="font-weight:bold">校风：</text>实事求是 艰苦奋斗\n<text style="font-weight:bold">校训：</text>惟真惟实\n<text style="font-weight:bold">校庆日：</text>10月1日\n<text style="font-weight:bold">学风：</text>勤奋严谨 求实创新\n<text style="font-weight:bold">石大精神：</text>求真务实 创新图强</text>
+<text wx:else ></text>
+</scroll-view>
+</view>
+
+</view>
