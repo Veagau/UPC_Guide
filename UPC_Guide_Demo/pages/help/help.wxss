@@ -1,0 +1,143 @@
+/* pages/help/help.wxss */
+view{
+  padding: 0px;
+  margin: 0px;
+}
+.viewlogo{
+  margin-top: 30px;
+  text-align: center;
+}
+.viewtext{
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.viewtitle{
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: blue;
+  color: #fff;
+  border-radius: 20px;
+}
+.viewcontent{
+  margin: 8px 20px;
+  padding: 0px 6px;
+  font-size: 1em;
+  line-height: 50rpx;
+  text-indent: 70rpx;
+  text-align: left;
+  border-style: dotted;
+  border-color: gray;
+  border-width: medium;
+}
+.viewpart1,.viewpart2,.viewpart3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.linkpart1,.linkpart2{
+  text-align: left;
+  text-indent: 0rpx;
+  margin: 5rpx auto;
+  /* width: 100%; */
+}
+.viewaddr,.viewqq{
+  /* display: fixed; */
+  /* width: 100%; */
+  width: 260px;
+  display: inline-block;
+}
+.viewcopya,.viewcopyq{
+  display: inline-block;
+  margin-left: 10rpx;
+  width: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  background-color: rgb(168, 168, 168);
+  border-radius: 20rpx;
+  /* box-shadow: 1px 1px 1px 1px #000; */
+  /* text-align: right; */
+}
+.finalpart1,.finalpart2{
+  margin:30rpx auto;
+  text-indent: 0rpx;
+  text-align: center;
+}
+.finalpart2{
+  font-weight: bold;
+}
+.viewfinal{
+  margin-bottom: 100rpx;
+}
+.linkpart3{
+  text-align: center;
+}
+.ctb{
+  text-indent: 0rpx;
+  margin: 5rpx auto;
+  margin-bottom: 18rpx;
+  width: 300rpx;
+  text-align: center;
+  background-color: rgb(20, 179, 28);
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  line-height: 58rpx;
+}
+.ctbtext{
+  text-align: center;
+  color: #fff;
+}
+.point{
+  font-weight: bold;
+}
+
+.table {
+  margin-top: 10rpx;
+  border: 0px solid darkgray;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2rem;
+  align-items: center;
+}
+.td {
+    width:100%;
+    justify-content: center;
+    text-align:  center;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  width: 100%;
+  justify-content: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.devtext{
+  text-align: left;
+  line-height: 100rpx;
+}
+.v1,.v2,.v3{
+  margin: 10rpx 20rpx;
+}
+.devlist{
+  display:flex;
+  justify-content: center;
+}

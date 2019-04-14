@@ -1,0 +1,42 @@
+<!--pages/navSingle/navSingle.wxml-->
+<map 
+    
+    id="map_nav" 
+    longitude="{{map_longitude}}" 
+    latitude="{{map_latitude}}" 
+    scale="{{map_scale}}"  
+    markers='{{markers}}' 
+    show-location ="true"
+    class="map_Nav"
+    bindmarkertap="markertap"
+    polyline='{{map_polyline}}'>
+    <!-- 2.2 是否导航 -->
+    <cover-view wx:if="{{isStartHidden==true}}" class="buttonLeft"
+    style='height:100rpx;'>
+      <button type="buttonStart" class='buttonPreStart' 
+            bindtap='navigateStart'> 开始导航</button>
+    </cover-view>
+    <cover-view wx:if="{{isStartHidden==true}}" class="buttonRight"
+    style='height:100rpx;'>
+      <button type="buttonStart" class='buttonPreEnd' 
+            bindtap='navigateExit'> 结束导航</button>
+    </cover-view>
+     <!-- 2.3 结束导航 -->
+    <cover-view wx:if="{{isStartHidden==false}}" 
+                class='buttonPositionExit' style='height:100rpx;'> 
+      <button type="button" bindtap='navigateExit'class='button'> 
+       结束导航
+      </button>
+    </cover-view>
+    <!-- 2.4 包括回到自身定位 -->
+    <cover-view  class="recoverPosition" >
+      <cover-image  bindtap='recoverPosition'  
+             src='images/recoverPosition.png'></cover-image>
+    </cover-view>
+      <!-- 2.5 方向盘 -->
+    <cover-view class="imgcompass" hidden='{{comHide}}' >
+      <cover-image  src='images/compass4.png' 
+          style='width:80rpx;height:80rpx;transform: rotate({{rotate}}deg);' hidden='{{comHide}}'>
+      </cover-image>
+      </cover-view>
+  </map>

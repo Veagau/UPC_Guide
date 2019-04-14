@@ -1,0 +1,70 @@
+<!--pages/help/help.wxml-->
+<!-- logo -->
+<view class='viewlogo' bindtap='taplogo'>
+  <image src='img/compass.png' style='width:100px;height:100px;'></image>
+</view>
+<!-- 彩蛋 -->
+<view class='devlist' hidden='{{hideview}}'>
+    <!-- <view class='devtext'>DevList：</view> -->
+    <view class='vvv'>
+      <image class='v1' src='img/v1.jpg' style='width:100rpx;height:100rpx;border-radius: 50%'></image>
+      <image class='v2' src='img/v2.jpg' style='width:100rpx;height:100rpx;border-radius: 50%'></image>
+      <image class='v3' src='img/v3.jpg' style='width:100rpx;height:100rpx;border-radius: 50%'></image>
+    </view>
+  </view>
+  <!-- 文字 -->
+<view class='viewtext'>
+  <view class='viewtitle'>
+    <text>声明</text>
+  </view>
+  <view class='viewcontent'>
+    <view class='viewpart1'>
+      <text class='part1'>石大导览微信小程序旨在为入学新生以及家长提供一个熟悉石大环境的工具，方便大家在校园内更好地通行，增进对石大的了解。\n </text>
+    </view>
+    <view class='viewpart2'>
+      <text class='part2'>此款微信小程序由学生利用课余时间独立开发完成，有些方面由于时间仓促、技术尚不熟练，请各位使用者谅解，如有任何使用上的问题或者建议，欢迎反馈，让我们一起让这款小程序变得更加完善。\n </text>
+    </view>
+    <view class='viewpart3'>
+      <text class='part3'>小程序中的图片资源部分采集自网络，如对原作者造成影响，请及时与我们联系，进行妥善处理。\n</text>
+    </view>
+
+  </view>
+  <view class='viewtitle'>
+    <text>反馈</text>
+  </view>
+  <view class='viewcontent'>
+    <view class='linkpart1'>
+      <view class='viewaddr'>
+        <text selectable='true'>邮箱：demo@example.com</text>
+      </view>
+      <view class='viewcopya' id='addr' bindtap='tapcopy'>复制</view>
+    </view>
+    <view class='linkpart3'>
+      <button open-type='contact' class='ctb'>
+        <text class='ctbtext'>直联客服</text>
+      </button>
+    </view>
+  </view>
+
+  <view class='viewtitle'>
+    <text>致谢</text>
+  </view>
+  <view class='viewcontent'>
+    <view class='viewpart1'>
+      <text class='part1'>感谢在开发过程中，给予支持与帮助的<text class='point'>校学生会</text>以及学校各个<text class='point'>组织与商铺</text>，感谢大家辛勤的努力与付出，希望这款微信小程序能够为大家享受石大时光提供一丝便利。 </text>
+    </view>
+  </view>
+  <view class='viewfinal'>
+    <view class='viewtitle'>
+      <text>最后</text>
+    </view>
+    <view class='viewcontent'>
+      <view class='finalpart1'>
+        <text class='part1'>致刚入学的同学们</text>
+      </view>
+      <view class='finalpart2'>
+        <text class='part2'>Enjoy the wonderful college life!</text>
+      </view>
+    </view>
+  </view>
+</view>

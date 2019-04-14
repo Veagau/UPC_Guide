@@ -1,0 +1,2 @@
+<!--pages/allview/allview.wxml-->
+<web-view src="{{allviewlink}}"></web-view>

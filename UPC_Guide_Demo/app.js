@@ -9,6 +9,6 @@ App({
     
   },
   globalData: {
-   ver:'Demo 0.2.0',//版本
+   ver:'Demo 1.0.0',//版本
   }
 })

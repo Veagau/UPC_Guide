@@ -1,7 +1,15 @@
 {
   "pages": [  
+  
     "pages/start/start",
-    "pages/introduce/introduce"
+    "pages/introduce/introduce",
+    "pages/navigation/navigation",
+    "pages/navMap/navMap",
+    "pages/search/search",
+    "pages/profile/profile",
+    "pages/allview/allview",
+    "pages/help/help"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

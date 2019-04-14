@@ -1,0 +1,44 @@
+/* pages/test/test.wxss */
+/* pages/profile/profile.wxss */
+.images{
+  width: 100%;
+  height: 480rpx;
+}
+.head{
+  display: flex;
+   flex-flow : row;
+   height: 160rpx;
+}
+.title
+{
+  display: flex;
+  position: relative;
+  top: 40rpx;
+  left: 40rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #0B8BF0;
+}
+.daohang{
+  display: flex;
+  position: fixed;
+  top: 540rpx;
+  right: 50px;
+  height: 60rpx;
+  width: 60rpx;
+}
+.news{
+  display: flex;
+  position: fixed;
+  width: 95%;
+  height: 100%;
+
+  padding: 30rpx;
+  background-color: #F6F8F8;
+}
+.content{
+  line-height: 50rpx;
+}
+.conts{
+  font-weight: bold;
+}

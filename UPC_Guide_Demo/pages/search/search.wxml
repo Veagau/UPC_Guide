@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="page">
+         <view class="find">
+    <input 
+      class="inputs" 
+      placeholder='请输入目标关键词' 
+      focus="{{focus}}" 
+      bindinput="bindInput"  
+      bindchange="bindchange" 
+      value="{{inputValue}}">
+    </input> 
+    <view 
+        wx:if="{{clearflag==true}}" > 
+        <icon class='icon2' bindtap="clearInput" type="clear" size="20"/>
+    </view> 
+     <icon class='icon1' bindtap="setSearchStorage" type="search" size="25"/>
+    </view>
+
+    <!--模糊匹配显示  -->
+    <scroll-view scroll-y="true" class="scrollview">
+        <view wx:for="{{bindSource}}">
+            <view id="{{item}}" bindtap="itemtap" class="itemview">{{item}}</view>
+        </view>
+    </scroll-view>
+    <!--历史记录显示  -->
+   <view   wx:if="{{hiszoneflag==true}}">  <!--是否隐藏 -->
+    <view class="hiszone" > 
+      <view class="history">历史记录</view>
+        <view scroll-y="true" wx:for="{{getSearch}}" wx:for-item="his" wx:key="his.id">
+          <view class="liclass"  id="{{his.id}}" bindtap="research">
+          <text style="width:100rpx">{{his.title}}</text>
+          </view>
+        </view>
+      <view 
+          class='history-span' 
+          wx:if="{{getSearch.length!==0}}" 
+          style="text-align:center;" 
+          bindtap="clearSearchStorage">
+          <view class="history-span1" bindtap="clearSearchStorage">清除历史记录</view>
+      </view>
+      <modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChangeConfirm" bindcancel="modalChangeCancel">
+        <view>是否要删除所有搜索记录？</view>
+      </modal> 
+      <!-- <button style="display:inline-block" bindtap="clearSearchStorage">清空搜索记录</button> -->
+    </view>
+   </view> 
+</view>

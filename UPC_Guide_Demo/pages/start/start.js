@@ -102,9 +102,9 @@ Page({
     var that = this;
     console.log(taptarget);
     console.log("进入石大导航");
-    // wx.navigateTo({
-    //   url: '../../pages/navigation/navigation',
-    // })
+    wx.navigateTo({
+      url: '../../pages/navigation/navigation',
+    })
     //点按效果动画
     let tapanimation2 = wx.createAnimation({
       duration: 200,
@@ -121,9 +121,9 @@ Page({
     var that = this;
     console.log(taptarget);
     console.log("进入石大全景");
-    // wx.navigateTo({
-    //   url: '../../pages/allview/allview',
-    // });
+    wx.navigateTo({
+      url: '../../pages/allview/allview',
+    });
     //点按效果动画
     let tapanimation3 = wx.createAnimation({
       duration: 200,
@@ -140,9 +140,9 @@ Page({
     var that = this;
     console.log(taptarget);
     console.log("进入帮助反馈");
-    // wx.navigateTo({
-    //   url: '../../pages/help/help',
-    // });
+    wx.navigateTo({
+      url: '../../pages/help/help',
+    });
     //点按效果动画
     let tapanimation4 = wx.createAnimation({
       duration: 200,

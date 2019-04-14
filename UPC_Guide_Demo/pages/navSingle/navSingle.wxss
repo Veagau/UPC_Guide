@@ -1,0 +1,226 @@
+/* pages/navSingle/navSingle.wxss */
+.flex-style{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-item{
+  height: 35px; 
+  line-height: 35px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1
+}
+
+.map_default{
+  display: flex;
+  position: relative;
+  top: 80rpx;
+  width: 100%;
+  height: 520rpx;
+}
+.map_spread{
+  display: flex;
+  position: relative;
+  top: 80rpx;
+  width: 100%;
+  height: 1090rpx;
+}
+
+.map_Nav{
+  display: flex;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.anniu{
+   display: flex;
+  position: relative;
+  top: 80rpx;
+  background-color: #DCDCDC; 
+  font-size: 28rpx;
+  color:black;
+  font-weight: lighter;
+  text-align: center;
+  flex-flow: row;
+  justify-content: center;
+}
+.icon{
+   width:100%;
+     display: flex;
+  position: relative;
+  top: 80rpx;
+}
+.scr{
+  height: 100%
+}
+.viewBorder{
+  display: flex;
+  position: relative;
+  border-bottom-style: solid;
+  border-bottom-color: whitesmoke;
+   padding: 10rpx; 
+  
+}
+.viewBorder .txt{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: left;  
+}
+.placeinfor{
+  display: flex;
+  position: relative;
+  top: 40rpx;
+  line-height: 60rpx;
+  padding: 20rpx;
+}
+.fanghuitab{
+    position: absolute;
+    top: -15rpx;
+  right: 60rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+.placetxt{
+  display: flex;
+  position: relative;
+  top: 20px;
+}
+.imagetwo{
+  position: absolute;
+  right: 60rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+.imageone{
+  margin-left: 15rpx;
+  width: 160rpx;
+  height: 100rpx;
+}
+.imageArrow{
+  position: absolute; 
+  right: 30rpx;
+  top: 14rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+.imageProfile{
+  margin-left: 15rpx;
+  width: 160rpx;
+  height: 100rpx;
+}
+.box {
+  z-index: 1;
+  position: fixed;
+    width:100%;
+    height: 80rpx;
+    /*white-space 不能丢  */
+    white-space: nowrap;
+    background-color: #0B8BF0;
+    box-sizing: border-box
+}
+.box-item {
+    width: 14%;
+    height:80%;
+    font-size: 30rpx;
+    color: white;
+    display: inline-block;
+     text-align: center;
+}
+.box-item_checked{
+    width: 14%;
+    height:80%;
+    border-bottom: 6rpx solid white;
+    color: white;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+}
+
+.search {
+  position: absolute;
+  top: 450rpx;
+  left: 600rpx;
+  display: flex;
+}
+.img {
+  width: 20px;
+  height: 20px;
+}
+.preStart{
+  position: absolute;
+  top: 900rpx;
+}
+.exitNav{
+  position: absolute;
+  top: 960rpx;
+}
+.imgcompass{
+  position: absolute;
+  top: 40rpx;
+  right: 30rpx;
+  /* -webkit-perspective: 500; */
+}
+
+
+.buttonLeft{
+  position: absolute;
+  bottom: 55rpx;
+  left: 40rpx;
+  display: flex;
+}
+.buttonRight{
+  position: absolute;
+  bottom: 55rpx;
+  left: 400rpx;
+  display: flex;
+}
+.buttonPreStart,.buttonPreEnd{
+  width: 300rpx; /* 宽度 */
+	height: 80rpx; /* 高度 */
+  border-width: 0px; /* 边框宽度 */
+	border-radius: 50rpx; /* 边框半径 边框扁圆*/
+  box-shadow: 2rpx 2rpx 2rpx #888888;/* 边框阴影*/
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 34rpx; /* 字体大小 */
+  font-weight: bold;
+}
+.buttonPreStart{
+  background: #1E90FF; /* 背景颜色 */
+}
+.buttonPreEnd{
+  background: rgb(216, 33, 13);
+}
+
+.buttonPositionExit{
+  position: absolute;
+  bottom: 55rpx;
+  left: 0;/* 居中显示 */
+  right: 0;
+}
+.button{
+  width: 540rpx; /* 宽度 */
+	height: 80rpx; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 50rpx; /* 边框半径 边框扁圆*/
+  box-shadow: 2rpx 2rpx 2rpx #888888;/* 边框阴影*/
+	background: #1E90FF; /* 背景颜色 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 34rpx; /* 字体大小 */
+}
+
+.recoverPosition{
+  position: absolute;
+  bottom: 200rpx;
+  left: 20rpx;
+  width: 80rpx; /* 宽度 */
+	height: 80rpx; /* 高度 */
+}

@@ -1,0 +1,146 @@
+.nav-header{
+  width:100%;
+  background-color: #eee
+}
+
+.shaoyishao{
+  display: inline-block;
+  background: pink;
+   height: 30px;
+   width:30px
+}
+.search view{
+  display: inline-block;
+}
+.search .search-input{
+  display: inline-block;
+  background-color:#ff1;
+  position:relative;
+  height: 50rpx;
+  padding: 20rpx 75rpx 20rpx 30rpx;
+}
+.search-input icon{
+  position:absolute;
+  left:5px;
+  top:10px;
+}
+.outside{
+  position: absolute
+}
+.search-select{
+  display: inline-block
+}
+.local{
+  display: inline-block;
+  border: 1px red solid;
+  border-radius: 3px;
+  background-color: #eee;
+  margin-left: 10px;
+}
+.hiszone{
+    /* margin-top: 60px; */
+     position: relative; 
+      width: 100%;
+    margin-top: 10px; 
+
+}
+.clearInput{
+  left: -40px;
+}
+
+
+/* pages/test/test.wxss */
+/* pages/profile/profile.wxss */
+.find{
+  display: flex;
+   flex-flow: row;
+ border-radius:50rpx;
+margin-left: 20rpx;
+   background-color: #F5F5F5;
+   margin-top: 20rpx;
+   height: 80rpx;
+  width:95%;
+  font-size:32rpx;
+}
+.icon1{
+  display: flex;
+ height: 80rpx;
+  margin-top: 16rpx;
+  margin-left: 230rpx;
+}
+ .inputs{
+   height: 80rpx;
+   margin-left: 50rpx;
+ }
+ .show{
+  display: flex;
+  position: absolute;
+    height: 80rpx;
+    text-align: center;
+    justify-content: center;
+} 
+.icon2{
+    display: flex;
+  position: fixed;
+  margin-left: 160rpx;
+  margin-top: 20rpx;
+ 
+}
+ .liclass { 
+ font-size: 35rpx; 
+ line-height: 34px; 
+ color: #575757; 
+ height: 34px; 
+ display: block; 
+ padding-left: 40rpx;
+ padding-top: 18rpx;
+ padding-bottom: 18rpx;
+ background-color: #fff; 
+ border-bottom: 1px solid #dbdbdb; 
+} 
+.history{
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+  width: 100%;
+  height: 60rpx;
+  background-color: #F5F5F5;
+  color: #666666;
+}
+.history-span{
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+.history-span1{
+  display: flex;
+  position: relative;
+  font-size: 40rpx;
+  text-align: center;
+  justify-content: center;
+  border: 1px gainsboro solid;
+  border-radius: 30rpx;
+  background-color: #CACAC7;
+  width: 40%;
+  color: #fff;
+}
+/* 匹配列表样式 */
+.scrollview {  
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  top: 120rpx;
+}
+
+.itemview {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 25rpx 30rpx 25rpx 50rpx;
+  border-top: 1px solid #b1b1b1;
+}

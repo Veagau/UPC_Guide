@@ -1,0 +1,89 @@
+<!-- navigation.wxml -->
+<!-- 1、第一行展示类别标签 -->
+<view bindtap='changeTable' >
+  <scroll-view class="box" scroll-x="true" >
+    <block wx:for="{{siteKind}}" wx:for-index="index"                             wx:for-item="site" wx:key ="title">
+      <view class="{{site.display?'box-item_checked':'box-item'}}"  
+            id='{{site.id}}' bindtap='changeTableCss'>{{site.title}}
+      </view>
+    </block>
+  </scroll-view>
+  
+</view>
+<!--2、 根据点击标签来控制标记点，更改markers,标记点 -->
+<view>
+  <map 
+    id="map_show" 
+    longitude="{{map_longitude}}" 
+    latitude="{{map_latitude}}" 
+    scale="{{map_scale}}"  
+    markers='{{markers}}' 
+    show-location ="true"
+    class="{{isMapSpread?'map_spread':'map_default'}}"
+    bindmarkertap="markertap"
+    polyline='{{map_polyline}}'>
+    <!-- 2.1 搜索控件 -->
+    <cover-view class="{{isMapSpread?'search_spread':'search_default'}}"
+ bindtap='navToSearch'>
+      <cover-image class="img" src='images/search.png'></cover-image>
+    </cover-view>
+    <!-- 2.2 回到自身定位 -->
+    <cover-view  class="recoverPosition" >
+      <cover-image  bindtap='recoverPosition'  
+             src='images/recoverPosition.png'></cover-image>
+    </cover-view>
+    <!-- 2.3 方向盘 -->
+    <cover-view class="viewcompass" style='' hidden='{{comHide}}'>
+      <cover-image  class="imgcompass" src='images/compass4.png' 
+          style='width:80rpx;height:80rpx;-webkit-transform: rotate({{rotate}}deg);' hidden='{{comHide}}'>
+      </cover-image>
+    </cover-view>
+  </map>
+<!-- 3、显示此标签下多少markers -->
+  <view class="{{isMapSpread?'anniu_spread':'anniu'}}" >
+    <view bindtap='spreadMap'>这里总共有{{markersNumber}}个地点</view>
+  </view> 
+</view>
+<!-- 4、地点列表 -->
+<view class='icon'  wx:if="{{isMapSpread == false}}">
+ <scroll-view class='scr' scroll-y="true" style='height:560rpx' >
+   <block 
+    wx:for="{{markersList.title}}" 
+    wx:for-index="index"                             
+    wx:for-item="site" 
+    wx:key ="title2">
+    <view  class="viewBorder" >
+      <image style='margin-top:2px' 
+             class='imageone'  
+             src="{{markersList.img[index]}}"
+             mode='aspectFill'>
+
+      </image>
+      <text class="txt" bindtap='navToProfile' id='{{markersList.id[index]}}' >{{site}}
+      </text>
+      <view bindtap='navToMap'>
+        <image 
+        style='margin-top:2px' class='imagetwo'  
+        src="images/nav.png"    
+        id='{{markersList.id[index]}}'>
+        </image>
+      </view>
+      
+    </view>
+  </block>
+ </scroll-view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

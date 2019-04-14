@@ -1,0 +1,237 @@
+.flex-style{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-item{
+  height: 35px; 
+  line-height: 35px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1
+}
+
+.map_default{
+  display: flex;
+  position: relative;
+  top: 80rpx;
+  width: 100%;
+  height: 520rpx;
+}
+.map_spread{
+  display: flex;
+  position: relative;
+  top: 80rpx;
+  width: 100%;
+  height: 1065rpx;
+}
+
+.map_Nav{
+  display: flex;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.anniu{
+   display: flex;
+  position: relative;
+  top: 75rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: #DCDCDC; 
+  font-size: 28rpx;
+  color:black;
+  font-weight: lighter;
+  text-align: center;
+  flex-flow: row;
+  justify-content: center;
+}
+.anniu_spread{
+   display: flex;
+  position: relative;
+  top: 80rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #DCDCDC; 
+  font-size: 28rpx;
+  color:black;
+  font-weight: lighter;
+  text-align: center;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.icon{
+  width:100%;
+  display: flex;
+  position: relative;
+  top: 80rpx;
+}
+.scr{
+  height: 100%
+}
+.viewBorder{
+  display: flex;
+  position: relative;
+  border-bottom-style: solid;
+  border-bottom-color: whitesmoke;
+   padding: 10rpx; 
+  
+}
+.viewBorder .txt{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: left;  
+}
+.placeinfor{
+  display: flex;
+  position: relative;
+  top: 40rpx;
+  line-height: 60rpx;
+  padding: 20rpx;
+}
+.fanghuitab{
+    position: absolute;
+    top: -15rpx;
+  right: 60rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+.placetxt{
+  display: flex;
+  position: relative;
+  top: 20px;
+}
+.imagetwo{
+  position: absolute;
+  right: 60rpx;
+  height: 60rpx;
+  width: 60rpx;
+  line-height: 75rpx;
+  top: 35rpx;
+}
+.imageone{
+  margin-left: 15rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+.txt{
+  margin-left: 20rpx;
+}
+.imageArrow{
+  position: absolute; 
+  right: 30rpx;
+  top: 14rpx;
+  height: 60rpx;
+  width: 60rpx;
+}
+.imageProfile{
+  margin-left: 15rpx;
+  width: 160rpx;
+  height: 100rpx;
+}
+.box {
+  z-index: 1;
+  position: fixed;
+    width:100%;
+    height: 80rpx;
+    /*white-space 不能丢  */
+    white-space: nowrap;
+    background-color: #0B8BF0;
+    box-sizing: border-box
+}
+.box-item {
+    width: 14%;
+    height:80%;
+    font-size: 30rpx;
+    color: white;
+    display: inline-block;
+     text-align: center;
+}
+.box-item_checked{
+    width: 14%;
+    height:80%;
+    border-bottom: 6rpx solid white;
+    color: white;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+}
+/* .search {
+  position: absolute;
+  top: 450rpx;
+  left: 600rpx;
+  display: flex;
+} */
+
+
+.search_default {
+  position: absolute;
+  bottom:60rpx;
+  left: 650rpx;
+  
+}
+.search_spread{
+  position: absolute;
+  bottom: 60rpx;
+  left: 650rpx;
+  
+}
+.img {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+
+.preStart{
+  position: absolute;
+  top: 900rpx;
+}
+.exitNav{
+  position: absolute;
+  top: 960rpx;
+}
+.viewcompass{
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  top: 40rpx;
+  right: 30rpx;
+}
+.imgcompass{
+  /* position: relative; */
+  text-align: center;
+  margin: 10rpx 10rpx;
+}
+.recoverPosition{
+  position: absolute;
+  bottom: 60rpx;
+  left: 20rpx;
+  width: 80rpx; /* 宽度 */
+	height: 80rpx; /* 高度 */
+}
+.sublife_bank{
+  position: absolute;
+  top: 10rpx;
+  left: 20rpx;
+  width: 100rpx; /* 宽度 */
+	height:70rpx; /* 高度 */
+}
+.sublife_store{
+  position: absolute;
+  top: 10rpx;
+  left: 130rpx;
+  width: 100rpx; /* 宽度 */
+	height:70rpx; /* 高度 */
+}
+.sublife_print{
+  position: absolute;
+  top: 10rpx;
+  left: 240rpx;
+  width: 100rpx; /* 宽度 */
+	height:70rpx; /* 高度 */
+}

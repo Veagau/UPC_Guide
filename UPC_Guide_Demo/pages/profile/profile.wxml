@@ -1,0 +1,23 @@
+<view style='width=100%'>
+<image src="{{siteProfile.img}}"  
+class="images" mode="aspectFill"/>  
+<view class="head">
+ <view class="title">{{siteProfile.title}}</view>
+  <image class='daohang'  src="images/nav.png"   bindtap='navToMap' id='{{index}}'>
+  </image>
+  </view>
+  <scroll-view class="news" scroll-y="true" style='height:530rpx'>
+  <view class="content"  wx:if="{{siteProfile.profile!=0}}">
+  <text class='conts'>介绍：\n</text><text>{{siteProfile.profile}}</text>
+  </view>
+  <view class="time"  wx:if="{{siteProfile.time!=0}}">
+    <text class="conts">开放时间：\n</text><text>{{siteProfile.time}}</text>
+  </view>
+  <view class="link" wx:if="{{siteProfile.link!=0}}">
+    <text class="conts">联系方式：\n</text><text>{{siteProfile.link}}</text>
+  </view>
+  <view class="note" wx:if="{{siteProfile.note!=0}}">
+  <text class="conts">注意事项：\n</text><text>{{siteProfile.note}}</text>
+  </view>
+  </scroll-view>
+</view>
